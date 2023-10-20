@@ -13,19 +13,19 @@ function foco() {
 
     const img = document.createElement("img");
     img.classList.add('foco');
-    img.setAttribute('src', 'foco-apagado.jpg');
+    img.setAttribute('src', 'images/foco-apagado.jpg');
 
     //función del evento click
     img.addEventListener('click', () => {
         //busca si la cadena apagado está en el atributo src
         if (img.src.indexOf("apagado") > 0) {
             // cambiamos la imagen y el fondo 
-            img.setAttribute('src', 'foco-prendido.jpg');
+            img.setAttribute('src', 'images/foco-prendido.jpg');
             document.body.classList.remove('oscuridad');
             document.body.classList.add('luz');
         }
         else {
-            img.setAttribute('src', 'foco-apagado.jpg');
+            img.setAttribute('src', 'images/foco-apagado.jpg');
             document.body.classList.remove('luz');
             document.body.classList.add('oscuridad');
         }
